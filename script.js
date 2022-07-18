@@ -4,17 +4,7 @@ $("#currentDay").text(currentDay);
 
 // Color-code time blocks relative to current time 
     // Create variable for times
-var hourDisplay = [
-    "9AM",
-    "10AM",
-    "11AM",
-    "12PM",
-    "1PM",
-    "2PM",
-    "3PM",
-    "4PM",
-    "5PM",
-];
+var hourDisplay =  ("#9AM", "#10AM", "#11AM", "#12PM", "#1PM", "#2PM", "#3PM", "#4PM", "#5PM");
 
 // Create time format
 var currentHour
