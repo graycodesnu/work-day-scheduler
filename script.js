@@ -13,18 +13,20 @@ var newEvent = document.querySelector ("#new-event");
 // Create button variable 
 var saveButton = document.querySelector("#save-btn");
 // Create event listener 
-saveButton.addEventListener("click" function(event) {
-    event.preventDefault();
+saveButton.addEventListener("click") {
+    // event.preventDefault();
     // Create saved input var
     var savedEvent = {
         input: newEvent.value.trim()
     };
     // Save to local storage
     localStorage.setItem("savedEvent", JSON.stringify(savedEvent));
-});
+};
 
     
 
 // Refresh page and saved event persists
     // **I think this would be done with: init()**
 init()
+
+
