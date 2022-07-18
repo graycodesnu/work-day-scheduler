@@ -1,12 +1,23 @@
 // current date
 var currentDay = moment().format("MMMM Do YYYY");
-("#currentDay").text(currentDay);
+$("#currentDay").text(currentDay);
 
 // Color-code time blocks relative to current time 
     // Create variable for times
-var hourDisplay = document.querySelector(
-    "#9AM #10AM #11AM #12PM #1PM #2PM #3PM #4PM #5PM"
-);
+var hourDisplay = [
+    "9AM",
+    "10AM",
+    "11AM",
+    "12PM",
+    "1PM",
+    "2PM",
+    "3PM",
+    "4PM",
+    "5PM",
+];
+
+// Create time format
+var currentHour
 
 var getIndex;
 var currentTimeIndex;
@@ -30,14 +41,14 @@ function currentTimeFormat(){
 // Save logged event to local storage
     // Read text input 
     // Link save button to local storage
-
+var savedEvent = JSON.parse(localStorage.getItem("savedEvent"));
 // Create input variable 
 var newEvent = document.querySelector ("#new-event");
 // Create button variable 
 var saveButton = document.querySelector("#save-btn");
 // Create event listener 
 saveButton.addEventListener("click") {
-    // event.preventDefault();
+    event.preventDefault();
     // Create saved input var
     var savedEvent = {
         input: newEvent.value.trim()
