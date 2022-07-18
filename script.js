@@ -1,8 +1,31 @@
 // current date
 var currentDay = moment().format("MMMM Do YYYY");
-$("#currentDay").text(currentDay);
+("#currentDay").text(currentDay);
 
 // Color-code time blocks relative to current time 
+    // Create variable for times
+var hourDisplay = document.querySelector(
+    "#9AM #10AM #11AM #12PM #1PM #2PM #3PM #4PM #5PM"
+);
+
+var getIndex;
+var currentTimeIndex;
+
+// Create function to read time 
+function currentTimeFormat(){
+    getIndex = hourDisplay.indexOf(currentTimeFormat);
+    currentTimeIndex = hourDisplay.indexOf(time);
+
+    if (currentTime === time) {
+        inputEl = `<input type='text' class='bg-danger col border p-3 note text-light' value=''/>`;
+        } else {
+        if (getIndex !== -1 && getIndex < currentTimeIndex) {
+        } else {
+            inputEl `<input type='text' class='bg-secondary col border p-3 note text-dark' value=''/>`;
+        }
+        }
+};
+
 
 // Save logged event to local storage
     // Read text input 
